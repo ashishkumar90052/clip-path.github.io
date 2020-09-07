@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Clip-Path using html css</title>
+</head>
+
+<body>
+    <h2 class="heading">Scroll to see effects</h2>
+    <section></section>
+    <div class="container">
+        <h2>Clip-Path effect</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat efficitur elit, ut sagittis ante
+            fringilla nec. Integer ac luctus orci. Donec ipsum lectus, posuere ac massa vitae, cursus fringilla tellus.
+            Sed in libero sed diam sagittis eleifend ac non velit. Maecenas eget convallis nibh, ultrices pharetra quam.
+            Ut a lacinia sem, eget laoreet ante. Proin sollicitudin est non tellus tempor pretium. Vivamus ultrices quis
+            justo vitae eleifend. Vestibulum malesuada augue ut rhoncus molestie. Morbi eleifend fermentum urna eget
+            scelerisque. Praesent dictum aliquam maximus. In mattis urna a dui pellentesque, quis posuere eros
+            facilisis.
+            <br><br>
+            Nam tortor nunc, cursus id vulputate sit amet, bibendum at odio. In erat dolor, hendrerit semper imperdiet
+            nec, vulputate at odio. Nam quis mattis eros. Fusce et dolor vel nulla egestas vehicula nec quis nisl. Nam
+            vulputate, metus id blandit elementum, justo mi malesuada augue, id eleifend ligula enim sed nibh. Nullam
+            suscipit nunc eget tellus scelerisque, egestas egestas est maximus. Quisque in ultricies libero. Cras luctus
+            egestas leo. Pellentesque vel ex turpis.
+            <br>
+            Maecenas venenatis tortor sed dapibus commodo. Sed ante lectus, vulputate quis elit quis, ullamcorper
+            imperdiet elit. Curabitur in nulla eros. Proin molestie enim sed diam fringilla mattis. Duis maximus
+            hendrerit mi cursus rutrum. Phasellus ligula metus,
+            <br><br>
+            fermentum at leo eu, lobortis porta augue. Nullam
+            fermentum iaculis arcu eu fermentum. In et risus nulla. Sed tempus urna eu dui mattis, ac hendrerit mauris
+            rutrum. Nulla dignissim gravida enim a vestibulum. Morbi aliquet nisi in ipsum bibendum elementum. In
+            ullamcorper urna velit, sed tempus massa molestie quis.
+            <br><br>
+            Vivamus blandit nunc sapien. Integer consectetur, justo nec suscipit commodo, justo nibh efficitur ipsum, id
+            tincidunt libero sem ac nulla. Quisque quis semper metus. Morbi tristique, justo non faucibus feugiat, ipsum
+            augue vestibulum nisi, eget dictum lectus turpis sed lorem. Donec diam erat, sodales eu elit ac, venenatis
+            tincidunt sem. Mauris non tincidunt mi. Suspendisse massa sapien,
+            <br><br>
+            mattis eget orci a, ullamcorper eleifend
+            mauris. Integer porttitor est vitae lorem tempus aliquet. Vestibulum mollis nisi id magna ultrices
+            consectetur et vitae ex. Morbi semper lacus nec gravida sollicitudin. Duis a sapien eu lorem cursus
+            porttitor. Duis commodo diam feugiat erat maximus iaculis. Sed eleifend semper augue id tempor.
+        </p>
+
+    </div>
+
+
+    <!-- JS code -->
+
+    <script type="text/javascript">
+        var section = document.querySelector('section');
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+            section.style.clipPath = "circle(" + value + "px at center)"
+        })
+    </script>
+
+</body>
+
+</html>
